@@ -5,7 +5,7 @@
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 :root{
     --text-color: #fff;
@@ -39,6 +39,12 @@ header{
     font-size: 36px;
     color:rgb(202, 195, 195);
     font-weight: 600;
+}
+.icon{
+    background:transparent;
+    height: 10px;
+    font-size: 200px;
+
 }
 span{
     color: var(--main-color);
@@ -87,7 +93,6 @@ section{
 .hero{
 height: 100vh;
 width: 100%;
-/* background:url(/portfolio2/background.jpg); */
 background-position:  right;
 display: flex;
 align-items: center;
@@ -386,7 +391,7 @@ form .Send-btn:hover{
     color: var(--text-color);
     font-size: 27px;
 }
-@media (max-width: 1700px){
+ @media (max-width: 1700px){
     header{
         padding: 20px 8%;
     }
@@ -434,8 +439,6 @@ form .Send-btn:hover{
     .box h3{
         font-size: 21px;
     }
-}
-@media (max-width: 1290px){
     .About{
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -507,4 +510,88 @@ form .Send-btn:hover{
         object-fit: cover;
         margin: 0 auto;
     }
+    @keyframes breathAnimation {
+    0% {
+        transform: scale(60%);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
 }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: currentColor;
+    }
+}
+
+@media (max-width: 477px) {
+    #navbar a {
+        margin-bottom: 20px;
+    }
+    #welcome-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #myphoto-container {
+        width: 100%;
+    }
+    #text-container {
+        margin-top: 20px;
+        padding: 0 30px;
+        width: 100%;
+    }
+    #text-container h1{
+        display: inline;
+    }
+    .sec-header {
+        margin: 15px 0;
+    }
+    .sec-pad {
+        padding: 10px 30px; 
+    }
+    .project-card {
+        width: 90%;
+        height: auto;
+    }
+    #lan-card-container {
+        flex-wrap: wrap;
+    }
+    .lan-card {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    .con {
+        width: 90%;
+    }
+}
+} 
