@@ -391,60 +391,61 @@ form .Send-btn:hover{
     color: var(--text-color);
     font-size: 27px;
 }
- @media (max-width: 1700px){
-    header{
+@media (max-width: 1700px) {
+    header {
         padding: 20px 8%;
     }
-    header.sticky{
+    header.sticky {
         padding: 14px 8%;
     }
-    section{
+    section {
         padding: 90px 8% 80px;
     }
-    .footer{
+    .footer {
         padding: 18px 8%;
     }
-    .logo{
-        font-size:28px;
+    .logo {
+        font-size: 28px;
     }
 }
 
-@media (max-width: 1380px){
-    header{
+@media (max-width: 1380px) {
+    header {
         padding: 20px 5%;
     }
-    header.sticky{
+    header.sticky {
         padding: 14px 5%;
     }
-    section{
+    section {
         padding: 90px 5% 80px;
     }
-    .footer{
+    .footer {
         padding: 18px 5%;
     }
-    .hero{
+    .hero {
         height: 90vh;
-        background-position:center;
+        background-position: center;
     }
 }
-@media (max-width: 1290px){
-    .box{
+
+@media (max-width: 1290px) {
+    .box {
         padding: 40px 40px 46px;
     }
-    .box img{
+    .box img {
         width: 100%;
         height: 60px;
         max-width: 60px;
     }
-    .box h3{
+    .box h3 {
         font-size: 21px;
     }
-    .About{
+    .About {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
     }
-    .About-img img{
+    .About-img img {
         text-align: center;
         width: 100%;
         height: 400px;
@@ -453,55 +454,56 @@ form .Send-btn:hover{
         object-fit: cover;
         margin: 0 auto;
     }
-    :root{
+    :root {
         --h1-font: 4rem;
         --h2-font: 2.9rem;
-        --p-font: 15px;   
+        --p-font: 15px;
     }
 }
 
-@media (max-width: 950px){
-    :root{
-        --h1-font:3.5rem;
+@media (max-width: 950px) {
+    :root {
+        --h1-font: 3.5rem;
     }
-    .social{
+    .social {
         margin-bottom: 20px;
     }
-    #menu-icon{
+    #menu-icon {
         display: block;
     }
-    .navlist{
-        position:absolute;
-        top:100%;
-        right:-100%;
-        width:255px;
-        min-height:100vh;
-        display:flex;
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
         flex-direction: column;
         background: var(--bg-color);
-        transition: all .50s ease;
+        transition: all 0.50s ease;
     }
-    .navlist a{
+    .navlist a {
         display: block;
         padding: 17px;
         font-size: 22px;
     }
-    .navlist.active{
-        right:0;
+    .navlist.active {
+        right: 0;
     }
 }
-@media (max-width: 680px){
-    .main-content p{
+
+@media (max-width: 680px) {
+    .main-content p {
         width: 100%;
     }
 }
-@media (max-width: 470px){
-    :root{
-        --h1-font:3rem;
-        --h2-font:2rem;
 
+@media (max-width: 470px) {
+    :root {
+        --h1-font: 3rem;
+        --h2-font: 2rem;
     }
-    .About-img img{
+    .About-img img {
         text-align: center;
         width: 100%;
         height: 300px;
@@ -509,48 +511,6 @@ form .Send-btn:hover{
         border-radius: 50%;
         object-fit: cover;
         margin: 0 auto;
-    }
-    @keyframes breathAnimation {
-    0% {
-        transform: scale(60%);
-        opacity: 0.25;
-    }
-
-    100% {
-        transform: scale(100%);
-        opacity: 1;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: currentColor;
     }
 }
 
@@ -570,14 +530,14 @@ form .Send-btn:hover{
         padding: 0 30px;
         width: 100%;
     }
-    #text-container h1{
+    #text-container h1 {
         display: inline;
     }
     .sec-header {
         margin: 15px 0;
     }
     .sec-pad {
-        padding: 10px 30px; 
+        padding: 10px 30px;
     }
     .project-card {
         width: 90%;
@@ -594,4 +554,3 @@ form .Send-btn:hover{
         width: 90%;
     }
 }
-} 
